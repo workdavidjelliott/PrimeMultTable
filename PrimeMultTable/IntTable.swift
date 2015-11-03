@@ -23,10 +23,21 @@ class IntTable
     
     func getAtPosition(column:Int, row:Int) -> Int?
     {
+        // Check for the top right table entry.
         if row == 0 && column == 0
         {
             return nil
         }
+        // Check for overruns
+        if row >= width
+        {
+            return nil
+        }
+        if column >= height
+        {
+            return nil
+        }
+        // Use the supplied data for the first row and column
         if row == 0
         {
             return topRow[column-1]
@@ -35,8 +46,14 @@ class IntTable
         {
             return leftColumn[row-1]
         }
+        // Calculate on all other cells.
         return topRow[column-1] * leftColumn[row-1]
     }
     
-
+    var width: Int {
+        return topRow.count + 1
+    }
+    var height: Int {
+        return leftColumn.count + 1
+    }
 }
