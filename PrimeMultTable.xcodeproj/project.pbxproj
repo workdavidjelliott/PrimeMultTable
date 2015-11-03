@@ -11,6 +11,8 @@
 		A133D04D1BE93E2000922285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A133D04C1BE93E2000922285 /* Assets.xcassets */; };
 		A133D0501BE93E2000922285 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A133D04E1BE93E2000922285 /* MainMenu.xib */; };
 		A133D05B1BE93E2100922285 /* PrimeMultTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */; };
+		A133D0661BE93EDA00922285 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0651BE93EDA00922285 /* Prime.swift */; };
+		A133D0671BE93EDC00922285 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0651BE93EDA00922285 /* Prime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		A133D0561BE93E2100922285 /* PrimeMultTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeMultTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeMultTableTests.swift; sourceTree = "<group>"; };
 		A133D05C1BE93E2100922285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A133D0651BE93EDA00922285 /* Prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				A133D04C1BE93E2000922285 /* Assets.xcassets */,
 				A133D04E1BE93E2000922285 /* MainMenu.xib */,
 				A133D0511BE93E2000922285 /* Info.plist */,
+				A133D0651BE93EDA00922285 /* Prime.swift */,
 			);
 			path = PrimeMultTable;
 			sourceTree = "<group>";
@@ -191,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A133D04B1BE93E2000922285 /* AppDelegate.swift in Sources */,
+				A133D0661BE93EDA00922285 /* Prime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A133D05B1BE93E2100922285 /* PrimeMultTableTests.swift in Sources */,
+				A133D0671BE93EDC00922285 /* Prime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
