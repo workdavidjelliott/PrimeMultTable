@@ -33,6 +33,7 @@ class PrimeMultTableTests: XCTestCase {
         XCTAssert(!9.isPrime())
     }
     
+    
 
     
 
