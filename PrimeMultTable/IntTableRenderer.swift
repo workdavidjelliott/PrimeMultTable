@@ -20,7 +20,12 @@ class IntTableRenderer
     {
         var str:String = String();
         
-        str = "|     "
+        if let value = value
+        {
+            str += String(format: "|% 4d ",value)
+        } else {
+            str += "|     "
+        }
         if includeTerminator
         {
             str += "|\n"
@@ -32,10 +37,15 @@ class IntTableRenderer
     {
         var result: String = String()
         
-        result += createValueInGridString(
-            table.getAtPosition(0,row: 0),
-            includeTerminator: true)
-        
+        for y in 0..<table.height
+        {
+            for x in 0..<table.width
+            {
+                result += createValueInGridString(
+                    table.getAtPosition(x,row: y),
+                    includeTerminator: (x == (table.width-1)) )
+            }
+        }
         return result
     }
 }
