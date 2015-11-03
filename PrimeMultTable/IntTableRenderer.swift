@@ -16,9 +16,27 @@ class IntTableRenderer
     {
         self.table = table
     }
+    func createValueInGridString(value:Int?, includeTerminator:Bool = false) -> String
+    {
+        var str:String = String();
+        
+        str = "|   "
+        if includeTerminator
+        {
+            str += "|\n"
+        }
+        return str
+    }
     
     func getTableAsString() -> String
     {
-        return ""
+        var result: String = String()
+        
+
+        result += createValueInGridString(
+            table.getAtPosition(0,row: 0),
+            includeTerminator: true)
+        
+        return result
     }
 }
