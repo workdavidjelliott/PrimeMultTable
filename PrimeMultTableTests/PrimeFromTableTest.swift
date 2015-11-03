@@ -14,7 +14,12 @@ class PrimeFromTableTest: XCTestCase {
 
     func testTableAgainstImplementation()
     {
+        let primeTable:PrimesUpTo7919 = PrimesUpTo7919()
         
+        for i in 2...7919
+        {
+            XCTAssertEqual(i.isPrime(), primeTable.isPrime(i), "Number to check is \(i)")
+        }
     }
     
     class PrimesUpTo7919
