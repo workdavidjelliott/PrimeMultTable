@@ -23,6 +23,11 @@ extension Int
         {
             return true
         }
+        // No even numbers.
+        if (self % 2) == 0
+        {
+            return false
+        }
 
         // For all numbers up to the prime candidate
         for i in 2..<self
