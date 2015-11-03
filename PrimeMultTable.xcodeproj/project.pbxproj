@@ -15,6 +15,9 @@
 		A133D0671BE93EDC00922285 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0651BE93EDA00922285 /* Prime.swift */; };
 		A133D0691BE9403800922285 /* PrimeFromTableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0681BE9403800922285 /* PrimeFromTableTest.swift */; };
 		A167FF1F1BE94974008FD85C /* PrimeFromUnoptimisedFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF1E1BE94974008FD85C /* PrimeFromUnoptimisedFunction.swift */; };
+		A167FF211BE94CB2008FD85C /* IntTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF201BE94CB2008FD85C /* IntTable.swift */; };
+		A167FF231BE94CC3008FD85C /* IntTableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF221BE94CC3008FD85C /* IntTableTest.swift */; };
+		A167FF241BE94DBA008FD85C /* IntTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF201BE94CB2008FD85C /* IntTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 		A133D0651BE93EDA00922285 /* Prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 		A133D0681BE9403800922285 /* PrimeFromTableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFromTableTest.swift; sourceTree = "<group>"; };
 		A167FF1E1BE94974008FD85C /* PrimeFromUnoptimisedFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFromUnoptimisedFunction.swift; sourceTree = "<group>"; };
+		A167FF201BE94CB2008FD85C /* IntTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTable.swift; sourceTree = "<group>"; };
+		A167FF221BE94CC3008FD85C /* IntTableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTableTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 				A133D04C1BE93E2000922285 /* Assets.xcassets */,
 				A133D04E1BE93E2000922285 /* MainMenu.xib */,
 				A133D0511BE93E2000922285 /* Info.plist */,
+				A167FF201BE94CB2008FD85C /* IntTable.swift */,
 				A133D0651BE93EDA00922285 /* Prime.swift */,
 			);
 			path = PrimeMultTable;
@@ -94,6 +100,7 @@
 			children = (
 				A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */,
 				A133D0681BE9403800922285 /* PrimeFromTableTest.swift */,
+				A167FF221BE94CC3008FD85C /* IntTableTest.swift */,
 				A133D05C1BE93E2100922285 /* Info.plist */,
 				A167FF1E1BE94974008FD85C /* PrimeFromUnoptimisedFunction.swift */,
 			);
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A133D04B1BE93E2000922285 /* AppDelegate.swift in Sources */,
+				A167FF211BE94CB2008FD85C /* IntTable.swift in Sources */,
 				A133D0661BE93EDA00922285 /* Prime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +221,8 @@
 				A167FF1F1BE94974008FD85C /* PrimeFromUnoptimisedFunction.swift in Sources */,
 				A133D0671BE93EDC00922285 /* Prime.swift in Sources */,
 				A133D0691BE9403800922285 /* PrimeFromTableTest.swift in Sources */,
+				A167FF241BE94DBA008FD85C /* IntTable.swift in Sources */,
+				A167FF231BE94CC3008FD85C /* IntTableTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
