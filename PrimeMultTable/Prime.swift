@@ -38,7 +38,7 @@ extension Int
         let checkUpTo:Int = Int(sqrt(Double(self)))
         
         // For all numbers up to the prime candidate
-        for i in 2..<checkUpTo
+        for i in 2...checkUpTo
         {
             // Check if the prime candidate is divisible.
             if (self % i) == 0
