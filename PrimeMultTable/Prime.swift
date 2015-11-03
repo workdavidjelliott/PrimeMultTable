@@ -8,6 +8,28 @@
 
 import Foundation
 
+
+class PrimeSequence
+{
+    func getArrayOfPrimes(count:Int) -> [Int]
+    {
+        var array:[Int] = []
+        var candidate:Int = 2
+        var foundPrimes:Int = 0
+        
+        while foundPrimes<count
+        {
+            if candidate.isPrime()
+            {
+                array.append(candidate)
+                foundPrimes++
+            }
+            candidate++
+        }
+        return array
+    }
+}
+
 extension Int
 {
     func isPrime() -> Bool

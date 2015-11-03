@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A133D04B1BE93E2000922285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D04A1BE93E2000922285 /* AppDelegate.swift */; };
-		A133D04D1BE93E2000922285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A133D04C1BE93E2000922285 /* Assets.xcassets */; };
-		A133D0501BE93E2000922285 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A133D04E1BE93E2000922285 /* MainMenu.xib */; };
 		A133D05B1BE93E2100922285 /* PrimeMultTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */; };
 		A133D0661BE93EDA00922285 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0651BE93EDA00922285 /* Prime.swift */; };
 		A133D0671BE93EDC00922285 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D0651BE93EDA00922285 /* Prime.swift */; };
@@ -25,6 +22,8 @@
 		A167FF2C1BE95481008FD85C /* IntTableRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF2B1BE95481008FD85C /* IntTableRendererTests.swift */; };
 		A167FF2E1BE954B5008FD85C /* IntTableRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF2D1BE954B5008FD85C /* IntTableRenderer.swift */; };
 		A167FF2F1BE9550A008FD85C /* IntTableRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF2D1BE954B5008FD85C /* IntTableRenderer.swift */; };
+		A167FF311BE960C3008FD85C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF301BE960C3008FD85C /* main.swift */; };
+		A167FF331BE96160008FD85C /* PrimeSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167FF321BE96160008FD85C /* PrimeSequenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 
 /* Begin PBXFileReference section */
 		A133D0471BE93E2000922285 /* PrimeMultTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeMultTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A133D04A1BE93E2000922285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A133D04C1BE93E2000922285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A133D04F1BE93E2000922285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A133D0511BE93E2000922285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A133D0561BE93E2100922285 /* PrimeMultTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeMultTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeMultTableTests.swift; sourceTree = "<group>"; };
@@ -55,6 +51,8 @@
 		A167FF271BE9535F008FD85C /* TableAlgorithmMultiply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAlgorithmMultiply.swift; sourceTree = "<group>"; };
 		A167FF2B1BE95481008FD85C /* IntTableRendererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTableRendererTests.swift; sourceTree = "<group>"; };
 		A167FF2D1BE954B5008FD85C /* IntTableRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTableRenderer.swift; sourceTree = "<group>"; };
+		A167FF301BE960C3008FD85C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A167FF321BE96160008FD85C /* PrimeSequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeSequenceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +94,8 @@
 		A133D0491BE93E2000922285 /* PrimeMultTable */ = {
 			isa = PBXGroup;
 			children = (
-				A133D04A1BE93E2000922285 /* AppDelegate.swift */,
-				A133D04C1BE93E2000922285 /* Assets.xcassets */,
-				A133D04E1BE93E2000922285 /* MainMenu.xib */,
 				A133D0511BE93E2000922285 /* Info.plist */,
+				A167FF301BE960C3008FD85C /* main.swift */,
 				A167FF201BE94CB2008FD85C /* IntTable.swift */,
 				A167FF251BE95314008FD85C /* TableAlgorithmInterface.swift */,
 				A167FF2D1BE954B5008FD85C /* IntTableRenderer.swift */,
@@ -114,6 +110,7 @@
 			children = (
 				A133D05A1BE93E2100922285 /* PrimeMultTableTests.swift */,
 				A133D0681BE9403800922285 /* PrimeFromTableTest.swift */,
+				A167FF321BE96160008FD85C /* PrimeSequenceTests.swift */,
 				A167FF221BE94CC3008FD85C /* IntTableTest.swift */,
 				A167FF2B1BE95481008FD85C /* IntTableRendererTests.swift */,
 				A133D05C1BE93E2100922285 /* Info.plist */,
@@ -203,8 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A133D04D1BE93E2000922285 /* Assets.xcassets in Resources */,
-				A133D0501BE93E2000922285 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A167FF261BE95314008FD85C /* TableAlgorithmInterface.swift in Sources */,
-				A133D04B1BE93E2000922285 /* AppDelegate.swift in Sources */,
 				A167FF211BE94CB2008FD85C /* IntTable.swift in Sources */,
+				A167FF311BE960C3008FD85C /* main.swift in Sources */,
 				A167FF2E1BE954B5008FD85C /* IntTableRenderer.swift in Sources */,
 				A167FF281BE9535F008FD85C /* TableAlgorithmMultiply.swift in Sources */,
 				A133D0661BE93EDA00922285 /* Prime.swift in Sources */,
@@ -243,6 +238,7 @@
 				A133D0671BE93EDC00922285 /* Prime.swift in Sources */,
 				A133D0691BE9403800922285 /* PrimeFromTableTest.swift in Sources */,
 				A167FF241BE94DBA008FD85C /* IntTable.swift in Sources */,
+				A167FF331BE96160008FD85C /* PrimeSequenceTests.swift in Sources */,
 				A167FF2A1BE953BF008FD85C /* TableAlgorithmMultiply.swift in Sources */,
 				A167FF231BE94CC3008FD85C /* IntTableTest.swift in Sources */,
 			);
@@ -257,17 +253,6 @@
 			targetProxy = A133D0571BE93E2100922285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A133D04E1BE93E2000922285 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A133D04F1BE93E2000922285 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A133D05D1BE93E2100922285 /* Debug */ = {
