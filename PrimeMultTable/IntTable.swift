@@ -32,11 +32,11 @@ class IntTable
             return nil
         }
         // Check for overruns
-        if row >= width
+        if row >= height
         {
             return nil
         }
-        if column >= height
+        if column >= width
         {
             return nil
         }
