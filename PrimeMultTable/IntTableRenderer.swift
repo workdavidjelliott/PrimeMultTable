@@ -20,7 +20,7 @@ class IntTableRenderer
     {
         var str:String = String();
         
-        str = "|   "
+        str = "|     "
         if includeTerminator
         {
             str += "|\n"
@@ -32,7 +32,6 @@ class IntTableRenderer
     {
         var result: String = String()
         
-
         result += createValueInGridString(
             table.getAtPosition(0,row: 0),
             includeTerminator: true)
