@@ -28,6 +28,12 @@ extension Int
         {
             return false
         }
+        // No multiples of 3
+        if (self % 3) == 0
+        {
+            return false
+        }
+        
 
         // For all numbers up to the prime candidate
         for i in 2..<self
