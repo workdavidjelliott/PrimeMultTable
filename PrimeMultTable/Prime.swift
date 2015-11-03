@@ -17,6 +17,12 @@ extension Int
         {
             return false
         }
+        // 2 and 3 are the only even, and divisible by 3 numbers.
+        // So just return those.
+        if self < 4
+        {
+            return true
+        }
 
         // For all numbers up to the prime candidate
         for i in 2..<self
