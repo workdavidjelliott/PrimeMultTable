@@ -34,9 +34,11 @@ extension Int
             return false
         }
         
-
+        // We only need to check upto the square root of the candidate.
+        let checkUpTo:Int = Int(sqrt(Double(self)))
+        
         // For all numbers up to the prime candidate
-        for i in 2..<self
+        for i in 2..<checkUpTo
         {
             // Check if the prime candidate is divisible.
             if (self % i) == 0
