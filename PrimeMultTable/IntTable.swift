@@ -10,13 +10,16 @@ import Foundation
 
 class IntTable
 {
+    var algorithm:TableAlgorithmInterface
+    
     // TODO : Update this so these arrays can dynamically change.
     // No test coverage yet.
     private var topRow:[Int]
     private var leftColumn:[Int]
     
-    init(topRow:[Int], leftColumn:[Int])
+    init(algorithm:TableAlgorithmInterface, topRow:[Int], leftColumn:[Int])
     {
+        self.algorithm = algorithm
         self.topRow = topRow
         self.leftColumn = leftColumn
     }
@@ -47,7 +50,7 @@ class IntTable
             return leftColumn[row-1]
         }
         // Calculate on all other cells.
-        return topRow[column-1] * leftColumn[row-1]
+        return algorithm.tableOperation(topRow[column-1], rowHeaderValue: leftColumn[row-1])
     }
     
     var width: Int {
