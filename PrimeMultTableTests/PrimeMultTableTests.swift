@@ -33,9 +33,18 @@ class PrimeMultTableTests: XCTestCase {
         XCTAssert(!9.isPrime())
     }
     
-    
-
-    
-
-    
+    func testPerformanceOf32BitMaximumNumber()
+    {
+        self.measureBlock {
+            2147483647.isPrime()
+        }
+    }
+    func testPerformanceOf64BitMaximumNumber()
+    {
+        self.measureBlock {
+            // Used Wolfram to find the nearest prime to the 64-bit signed boundary
+            // This is the largest signed 64-bit number.
+            9223372036854775783.isPrime()
+        }
+    }
 }
