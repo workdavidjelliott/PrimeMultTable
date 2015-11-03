@@ -42,15 +42,18 @@ extension Int
         let checkUpTo:Int = Int(sqrt(Double(self)))
         
 
-        
-        // For all numbers up to the prime candidate
-        for i in 2...checkUpTo
+        var i = 5
+        while (i <= checkUpTo)
         {
-            // Check if the prime candidate is divisible.
-            if (self % i) == 0
+            if ((self % i) == 0)
             {
-                return false
+                return false;
             }
+            if ((self % (i + 2)) == 0)
+            {
+                return false;
+            }
+            i = i + 6;
         }
         return true
     }
