@@ -1,15 +1,15 @@
-How to run it.
+#How to run it.
 
 Install XCode v7.1
 Double click 'PrimeMultTable.xcodeproj'
 From the Product menu select 'Test' to run all XCTests
 From the Product menu select 'Run' to test the final application.
 
-What i'm pleased with
+#What I am pleased with
 
 Caught the irregular sized IntTable bug.
 
-What I would do with more time
+#What I would do with more time
 
 I would convert the PrimeSequence into a type Generator.
 Better tests for the prime sequence.
