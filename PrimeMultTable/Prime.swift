@@ -28,6 +28,10 @@ extension Int
         {
             return false
         }
+        if (self < 9)
+        {
+            return true
+        }
         // No multiples of 3
         if (self % 3) == 0
         {
@@ -36,6 +40,8 @@ extension Int
         
         // We only need to check upto the square root of the candidate.
         let checkUpTo:Int = Int(sqrt(Double(self)))
+        
+
         
         // For all numbers up to the prime candidate
         for i in 2...checkUpTo
