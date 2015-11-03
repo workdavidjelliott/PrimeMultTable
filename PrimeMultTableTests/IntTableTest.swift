@@ -14,13 +14,13 @@ class IntTableTest: XCTestCase {
 
     func testTableMultiplies()
     {
-        let table:IntTable = IntTable(topRow: [5], leftColumn: [10])
+        let table:IntTable = IntTable(algorithm: TableAlgorithmMultiply(),topRow: [5], leftColumn: [10])
         XCTAssert(table.getAtPosition(1,row:1) == 50)
         
     }
     func testTableOverruns()
     {
-        let table:IntTable = IntTable(topRow: [5], leftColumn: [10])
+        let table:IntTable = IntTable(algorithm: TableAlgorithmMultiply(),topRow: [5], leftColumn: [10])
         // Check for overruns
         XCTAssert(table.getAtPosition(2,row:2) == nil)
         XCTAssert(table.getAtPosition(1,row: 2) == nil)
@@ -28,12 +28,12 @@ class IntTableTest: XCTestCase {
     }
     func testEmptyTable()
     {
-        let table:IntTable = IntTable(topRow: [], leftColumn: [])
+        let table:IntTable = IntTable(algorithm: TableAlgorithmMultiply(),topRow: [], leftColumn: [])
         XCTAssert(table.getAtPosition(1,row:1) == nil)
     }
     func testPreCalculatedTable()
     {
-        let table:IntTable = IntTable(topRow: [1,2,3,4,5], leftColumn: [5,4,3,2,1])
+        let table:IntTable = IntTable(algorithm:TableAlgorithmMultiply(),topRow: [1,2,3,4,5], leftColumn: [5,4,3,2,1])
         
         var resultTest:[Int?] =
             [
